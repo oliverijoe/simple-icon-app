@@ -1,5 +1,71 @@
-body {
+html {
     background: coral;
     color: black;
     font-size: 16px;
+    font-family: 'Changa', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    color: teal;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+}
+
+.directions {
+    text-align: center;
+    border: 5px solid black;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.icon-grid {
+    height: 510px;
+    width: 510px;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid black;
+}
+
+.grid-box {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.reset-button {
+    height: 100px;
+    width: 300px;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    background: turquoise;
+    border: 5px solid black;
+}
+
+.reset-button:hover {
+    background: white;
+    color:turquoise;
 }
