@@ -48,6 +48,30 @@ h2 {
     width: 100px;
 }
 
+.white {
+    background: white;
+}
+
+.blue {
+    background: skyblue;
+}
+
+.red {
+    background: rgb(255, 48, 48);
+}
+
+.green {
+    background: rgb(0, 201, 33);
+}
+
+.yellow {
+    background: yellow;
+}
+
+.orange {
+    background: orange;
+}
+
 .reset {
     display: flex;
     justify-content: center;
