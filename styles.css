@@ -1,5 +1,5 @@
 html {
-    background: coral;
+    background: linear-gradient(to right, coral, rgb(253, 158, 158));
     color: black;
     font-size: 16px;
     font-family: 'Changa', sans-serif;
@@ -7,7 +7,7 @@ html {
 
 h1 {
     font-size: 3em;
-    color: teal;
+    color: rgb(47, 141, 132);
     font-weight: 800;
 }
 
@@ -48,6 +48,12 @@ h2 {
     width: 100px;
 }
 
+.grid-box:hover {
+    border: 6px solid rgb(255, 255, 0);
+    height: 90px;
+    width: 90px;
+}
+
 .white {
     background: white;
 }
@@ -83,10 +89,11 @@ h2 {
     height: 100px;
     width: 300px;
     font-size: 2rem;
-    color: white;
+    color: black;
     font-weight: 700;
     background: turquoise;
     border: 5px solid black;
+    font-family: 'Changa', sans-serif;
 }
 
 .reset-button:hover {
