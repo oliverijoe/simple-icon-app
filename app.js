@@ -29,7 +29,7 @@ const box_25 = document.getElementById("box-25");
 const allBoxes = document.querySelectorAll(".grid-box");
 
 // Selects the reset button so that all boxes can be reset 
-const resetButton = document.getElementsByClassName(".reset-button");
+const resetButton = document.getElementById("reset");
 
 
 // Function that cycles through the colors
@@ -50,9 +50,10 @@ const changeColor = function(e) {
     } else if (box.classList.contains("yellow")) {
         box.classList.remove("yellow");
         box.classList.add("orange");
-    } else
+    } else {
         box.classList.remove("orange");
         box.classList.add("white");
+    }
 };
 
 // Listens for a click on a particular box and runs through the above funcition
@@ -84,12 +85,17 @@ box_24.addEventListener("click", changeColor);
 box_24.addEventListener("click", changeColor);
 box_25.addEventListener("click", changeColor);
 
+// Loops through all boxes and removes all colors and adds white
+const resetColors = function () {
+    for (box of allBoxes){
+        box.classList.remove("blue");
+        box.classList.remove("green");
+        box.classList.remove("red");
+        box.classList.remove("yellow");
+        box.classList.remove("orange");
+        box.classList.add("white");
+    }
+}
+
 // Reset Button - resets all boxes to white
-resetButton.addEventListener("click", function () {
-    allBoxes.classList.remove("blue");
-    allBoxes.classList.remove("green");
-    allBoxes.classList.remove("red");
-    allBoxes.classList.remove("yellow");
-    allBoxes.classList.remove("orange");
-    allBoxes.classList.add("white");
-});
+resetButton.addEventListener("click", resetColors);
