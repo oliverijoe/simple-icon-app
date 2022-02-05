@@ -1,3 +1,4 @@
+// Picking out each box on the grid to be selected by event listener
 const box_1 = document.getElementById("box-1");
 const box_2 = document.getElementById("box-2");
 const box_3 = document.getElementById("box-3");
@@ -23,12 +24,15 @@ const box_22 = document.getElementById("box-22");
 const box_23 = document.getElementById("box-23");
 const box_24 = document.getElementById("box-24");
 const box_25 = document.getElementById("box-25");
+
+// Selects all boxes on the grid to be turned back into white
 const allBoxes = document.querySelectorAll(".grid-box");
+
+// Selects the reset button so that all boxes can be reset 
 const resetButton = document.getElementsByClassName(".reset-button");
 
 
 // Function that cycles through the colors
-
 const changeColor = function(e) {
     const box = e.target;
     if (box.classList.contains("white")) {
@@ -53,7 +57,6 @@ const changeColor = function(e) {
 
 // Listens for a click on a particular box and runs through the above funcition
 // to change the color of the box
-
 box_1.addEventListener("click", changeColor);
 box_2.addEventListener("click", changeColor);
 box_3.addEventListener("click", changeColor);
@@ -82,7 +85,6 @@ box_24.addEventListener("click", changeColor);
 box_25.addEventListener("click", changeColor);
 
 // Reset Button - resets all boxes to white
-
 resetButton.addEventListener("click", function () {
     allBoxes.classList.remove("blue");
     allBoxes.classList.remove("green");
